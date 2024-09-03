@@ -1,10 +1,17 @@
-import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import LoginPage from "./components/LoginPage";
+import HomePage from "./pages/HomePage";
 
 const App = () => {
   return (
-    <div>
-      <h1>Image Gallery</h1>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/login" element={<LoginPage />} />
+          <Route index element={<HomePage />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 };
 
