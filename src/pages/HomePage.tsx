@@ -1,5 +1,13 @@
+import HeroPage from "../components/HeroPage";
+import Navbar from "../components/Navbar";
+
 const HomePage = () => {
-  return <div>HomePage</div>;
+  return (
+    <>
+      <Navbar />
+      <HeroPage />
+    </>
+  );
 };
 
 export default HomePage;
