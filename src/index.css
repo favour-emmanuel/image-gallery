@@ -1,6 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply font-plusSans;
+}
+
 .hero_bg {
+  min-height: 100vh;
+  background: url(./assets/heroImg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
