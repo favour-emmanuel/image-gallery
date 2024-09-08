@@ -1,4 +1,6 @@
 import { navItem } from "../constants";
+import logo from "../assets/dexels-logo.svg";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 const Navbar = () => {
   const nav: navItem[] = [
@@ -15,18 +17,29 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="w-full lg:px-14 px-7 absolute z-[999]">
+    <div className="w-full lg:px-12 px-7 lg:py-8 py-3 absolute z-[999]">
       <div className="flex justify-between items-center text-white">
-        <div>
-          <h1 className="font-bold text-base">Dexels</h1>
+        <div className="flex items-center gap-2">
+          <img src={logo} alt="" className="w-7" />
+          <h1 className="font-semibold text-lg">Dexels</h1>
         </div>
-        <ul className="flex justify-between items-center ">
+        <div className="flex justify-between items-center gap-7">
           {nav.map((item, index) => (
-            <li key={index} className="text-white">
+            <li
+              key={index}
+              className="text-white text-[15px] list-none hidden lg:flex"
+            >
               {item.label}
             </li>
           ))}
-        </ul>
+          <h1 className="h-10 w-10 rounded-full flex justify-center items-center bg-[#FDF4E9] text-[#E8912D]">
+            <Icon icon="bxs:user" />
+          </h1>
+
+          <button className="bg-appWhite py-2.5 px-3.5 rounded-lg text-appBlack font-semibold text-sm">
+            Upload
+          </button>
+        </div>
       </div>
     </div>
   );
