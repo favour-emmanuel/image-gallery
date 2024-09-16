@@ -1,15 +1,15 @@
+import { Outlet } from "react-router-dom";
 import HeroPage from "../components/HeroPage";
 import Navbar from "../components/Navbar";
-import AssetHomePage from "./AssetHomePage";
 
-const HomePage = () => {
+const Layout = () => {
   return (
     <>
       <Navbar />
       <HeroPage />
-      <AssetHomePage />
+      <Outlet />
     </>
   );
 };
 
-export default HomePage;
+export default Layout;
