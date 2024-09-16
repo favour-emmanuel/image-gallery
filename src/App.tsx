@@ -4,6 +4,7 @@ import Layout from "./layout/Layout";
 import AssetHomePage from "./pages/AssetHomePage";
 import HomePage from "./pages/HomePage";
 import AssetVideoPage from "./pages/AssetVideoPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 const App = () => {
   return (
@@ -16,7 +17,7 @@ const App = () => {
             <Route index element={<AssetHomePage />} />
             <Route path="/video" element={<AssetVideoPage />} />
           </Route>
-          <Route path="/*" element={<h1>page not found</h1>} />
+          <Route path="/*" element={<NotFoundPage />} />
         </Routes>
       </BrowserRouter>
     </>
