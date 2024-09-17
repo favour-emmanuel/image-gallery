@@ -5,6 +5,8 @@ import AssetHomePage from "./pages/AssetHomePage";
 import HomePage from "./pages/HomePage";
 import AssetVideoPage from "./pages/AssetVideoPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import LeaderBoardPage from "./pages/LeaderBoardPage";
+import ChallengesPage from "./pages/ChallengesPage";
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
           <Route path="/" element={<Layout />}>
             <Route index element={<AssetHomePage />} />
             <Route path="/video" element={<AssetVideoPage />} />
+            <Route path="/leaderboard" element={<LeaderBoardPage />} />
+            <Route path="/challenges" element={<ChallengesPage />} />
           </Route>
           <Route path="/*" element={<NotFoundPage />} />
         </Routes>

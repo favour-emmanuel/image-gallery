@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
+import AssetPhotos from "./AssetPhotos";
 
 const AssetHome = () => {
   return (
@@ -14,6 +15,7 @@ const AssetHome = () => {
           </span>
         </button>
       </div>
+      <AssetPhotos />
     </div>
   );
 };

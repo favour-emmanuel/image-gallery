@@ -37,7 +37,7 @@ const AssetNav = () => {
   ];
 
   return (
-    <nav className="flex justify-center items-center lg:py-10 ">
+    <nav className="flex justify-center items-center py-4">
       <ul className="flex py-5 gap-5 items-center">
         {asstNav.map((nav, index) => (
           <Link

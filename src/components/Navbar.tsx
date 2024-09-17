@@ -1,6 +1,7 @@
 import { navItem } from "../constants";
 import logo from "../assets/dexels-logo.svg";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const nav: navItem[] = [
@@ -19,10 +20,10 @@ const Navbar = () => {
   return (
     <div className="w-full lg:px-12 px-7 lg:py-8 py-3 absolute z-[999]">
       <div className="flex justify-between items-center text-white">
-        <div className="flex items-center gap-2">
+        <Link to={"/"} className="flex items-center gap-2">
           <img src={logo} alt="" className="w-7" />
           <h1 className="font-semibold text-lg">Dexels</h1>
-        </div>
+        </Link>
         <div className="flex justify-between items-center gap-7">
           {nav.map((item, index) => (
             <li

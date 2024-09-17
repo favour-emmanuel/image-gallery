@@ -9,3 +9,15 @@ export interface assetNavItem {
   path: string;
   onclick: () => void;
 }
+
+export interface assetPhotos {
+  id: string;
+  url: string;
+  photographer: {
+    name: string;
+    profilePicture: string;
+  };
+  isLiked: boolean;
+  downloadLink: string;
+  onclick: () => void;
+}
